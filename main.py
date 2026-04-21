@@ -19,11 +19,19 @@ async def cmd_start(message: Message):
 
 @dp.message(F.text == "Лукойл")
 async def lukoil_handler(message: Message):
-    await message.answer("Ближайшие дивиденды Лукойла: 15 декабря 2024 года.")
+    await message.answer("Ближайшие дивиденды Лукойл: 15 мая 2025 года.")
 
 @dp.message(F.text == "Сбер")
 async def sber_handler(message: Message):
-    await message.answer("Ближайшие дивиденды Сбера: июль 2025 (прогноз).")
+    await message.answer("Ближайшие дивиденды Сбер: июль 2025 (рекомендованны).")
+
+@dp.message(F.text == "Озон")
+async def ozon_handler(message: Message):
+    await message.answer("Ближайшие дивиденды Озон: май 2025 (рекомендованны).")
+
+@dp.message(F.text == "Яндекс")
+async def yandex_handler(message: Message):
+    await message.answer("Ближайшие дивиденды Яндекс: апрель 2025 (рекомендованны).")
 
 async def main():
     print("Ожидаю сообщения...")
